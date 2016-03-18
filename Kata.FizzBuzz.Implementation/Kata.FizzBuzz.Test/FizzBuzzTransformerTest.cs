@@ -6,7 +6,7 @@
     using Microsoft.VisualStudio.TestTools.UnitTesting;
 
     /// <summary>
-    /// Summary description for FizzBuzzTransformerTest
+    /// Summary description for FizzBuzzTransformerTest 1
     /// </summary>
     [TestClass]
     public class FizzBuzzTransformerTest
