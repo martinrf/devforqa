@@ -20,10 +20,5 @@ namespace OOPSnippets.Polymorphism
         {
             get { return $"Date: {this.Entity.Date}"; }
         }
-
-        protected string LineThree { get; set; }
-        protected string LineFour { get; set; }
-        protected string LineFive { get; set; }
-        protected string CountrCode { get; set; }
     }
 }
