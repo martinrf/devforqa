@@ -58,6 +58,11 @@
     <Compile Include="Inheritance\Multiple\IHasWindows.cs" />
     <Compile Include="Inheritance\Single\BaseClass.cs" />
     <Compile Include="Inheritance\Single\DerivedClass.cs" />
+    <Compile Include="Polymorphism\ForLeaseFormatter.cs" />
+    <Compile Include="Polymorphism\ForSaleHeaderFormatter.cs" />
+    <Compile Include="Polymorphism\Models\HeaderModel.cs" />
+    <Compile Include="Polymorphism\HeaderFormatter.cs" />
+    <Compile Include="Polymorphism\PropertyHeaderFormatter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

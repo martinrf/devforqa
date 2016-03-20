@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOPSnippets", "OOPSnippets\OOPSnippets.csproj", "{2312EBE3-60E9-4B1D-BCDD-EE81EF3B7C1C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOPSnippets.Test", "OOPSnippets.Test\OOPSnippets.Test.csproj", "{55957F05-F963-4B50-A766-5F7C524F0C5E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{2312EBE3-60E9-4B1D-BCDD-EE81EF3B7C1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2312EBE3-60E9-4B1D-BCDD-EE81EF3B7C1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2312EBE3-60E9-4B1D-BCDD-EE81EF3B7C1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55957F05-F963-4B50-A766-5F7C524F0C5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55957F05-F963-4B50-A766-5F7C524F0C5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55957F05-F963-4B50-A766-5F7C524F0C5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55957F05-F963-4B50-A766-5F7C524F0C5E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
