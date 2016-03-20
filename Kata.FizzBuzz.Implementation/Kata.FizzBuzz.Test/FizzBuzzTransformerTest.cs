@@ -21,17 +21,9 @@
 
         [TestMethod]
         [ExpectedException(typeof(ArgumentException))]
-        public void NotASequenceWithNegative()
+        public void NotASequence()
         {
-            int[] numbers = { -1, 3, 6 };
-            this._transformer.Transform(numbers);
-        }
-
-        [TestMethod]
-        [ExpectedException(typeof(ArgumentException))]
-        public void NotASequencee()
-        {
-            int[] numbers = { 1, 3, 6 };
+            int[] numbers = { -2, 3, 6 };
             this._transformer.Transform(numbers);
         }
 
@@ -67,7 +59,7 @@
         public void NegativeNumbers()
         {
             int[] numbers = { -1, -2, -3, -4, -5 };
-            this._transformer.Transform(numbers);
+            var result = this._transformer.Transform(numbers);
         }
     }
 }
