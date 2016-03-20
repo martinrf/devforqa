@@ -53,6 +53,7 @@
     <Compile Include="Inheritance\Multilevel\HomoSapiensIdaltu.cs" />
     <Compile Include="Inheritance\Multiple\CarComputer.cs" />
     <Compile Include="Inheritance\Multiple\IAndroidServices.cs" />
+    <Compile Include="Inheritance\Multiple\IHasDoors.cs" />
     <Compile Include="Inheritance\Multiple\IHasMotor.cs" />
     <Compile Include="Inheritance\Multiple\IHasWindows.cs" />
     <Compile Include="Inheritance\Single\BaseClass.cs" />

@@ -1,8 +1,11 @@
-﻿namespace OOPSnippets.Inheritance.Multiple
+﻿using System.Collections.Generic;
+
+namespace OOPSnippets.Inheritance.Multiple
 {
     public interface IHasWindows
     {
-        bool OpenWindow(int num);
-        bool CloseWindow(int num);
+        List<object> Windows { get; set; } 
+        bool Open(int window);
+        bool Close(int window);
     }
 }
