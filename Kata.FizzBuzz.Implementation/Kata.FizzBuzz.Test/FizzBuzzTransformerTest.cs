@@ -16,14 +16,22 @@
         [TestInitialize]
         public void Setup()
         {
-            this._transformer = new FizzBuzzTransformer();
+            this._transformer = new FizzBuzzTransformerExample();
         }
 
         [TestMethod]
         [ExpectedException(typeof(ArgumentException))]
-        public void NotASequence()
+        public void NotASequenceWithNegative()
         {
-            int[] numbers = { -2, 3, 6 };
+            int[] numbers = { -1, 3, 6 };
+            this._transformer.Transform(numbers);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void NotASequencee()
+        {
+            int[] numbers = { 1, 3, 6 };
             this._transformer.Transform(numbers);
         }
 
