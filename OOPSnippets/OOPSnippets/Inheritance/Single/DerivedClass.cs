@@ -2,7 +2,7 @@
 {
     public class DerivedClass : BaseClass
     {
-        public string Name { get; set; }
+        public string Name { get; private set; }
 
         public DerivedClass() { }
 

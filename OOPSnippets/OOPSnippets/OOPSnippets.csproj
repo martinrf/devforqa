@@ -40,6 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClassesAndObjects\SampleClass.cs" />
+    <Compile Include="ClassesAndObjects\SampleStruct.cs" />
+    <Compile Include="ClassesAndObjects\StaticClass.cs" />
     <Compile Include="Inheritance\Hierarchical\Developer.cs" />
     <Compile Include="Inheritance\Hierarchical\QA.cs" />
     <Compile Include="Inheritance\Hierarchical\ScrumMaster.cs" />
@@ -67,6 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Abstraction\" />
+    <Folder Include="Encapsulation\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

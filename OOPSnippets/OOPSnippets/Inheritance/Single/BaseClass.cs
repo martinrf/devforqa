@@ -2,8 +2,8 @@
 {
     public class BaseClass
     {
-        public int Id { get; set; }
-
+        public int Id { get; private set; }
+        
         public BaseClass() { }
 
         public BaseClass(int id)
