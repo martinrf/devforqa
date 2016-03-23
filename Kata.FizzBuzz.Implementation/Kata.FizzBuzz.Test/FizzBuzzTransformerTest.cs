@@ -16,7 +16,7 @@
         [TestInitialize]
         public void Setup()
         {
-            this._transformer = new FizzBuzzTransformerExample();
+            this._transformer = new FizzBuzzTransformer();
         }
 
         [TestMethod]
