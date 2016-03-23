@@ -2,13 +2,13 @@
 {
     public static class StaticClass
     {
-        private static int internalCounter;
+        private static int _internalCounter;
 
         public static int GetCounter
         {
             get
             {
-                return internalCounter++;
+                return _internalCounter++;
             }
         }
     }
