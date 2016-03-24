@@ -4,7 +4,8 @@ namespace Homework
 {
     public class MathUtils
     {
-        public static decimal RaizCuadrada(int numero)
+        /// cambiar esto para que refleje lo que hicimos en clase.
+        public static decimal RaizCuadrada(decimal numero)
         {
             throw new NotImplementedException();
         }
