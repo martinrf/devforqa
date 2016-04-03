@@ -58,6 +58,7 @@
     <Compile Include="CalculatorBase2Test.cs" />
     <Compile Include="CalculatorBaseBaseTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BaseChangeTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CalculatorMultiBase\CalculatorMultiBase.csproj">

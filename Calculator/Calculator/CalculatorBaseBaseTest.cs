@@ -1,6 +1,4 @@
-﻿
-using System;
-using CalculatorMultiBase;
+﻿using CalculatorMultiBase;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Calculator
