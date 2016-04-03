@@ -19,7 +19,11 @@ namespace OOPSnippets.Test
                 Price = 22.4m,
                 PropertyName = "Test Item"
             };
+            ////https://msdn.microsoft.com/es-es/library/system.globalization.cultureinfo(v=vs.110).aspx
+            ////Thread.CurrentThread.CurrentCulture = new CultureInfo("es-ES");
+            ////Thread.CurrentThread.CurrentUICulture = new CultureInfo("es-ES");
         }
+
         [TestMethod]
         public void ForLease()
         {
@@ -44,12 +48,12 @@ namespace OOPSnippets.Test
             Assert.AreEqual("Property Name: Test Item", formatter.LineTwo);
         }
 
-        public void VerifyLineOne(HeaderFormatter formatter)
+        private static void VerifyLineOne(HeaderFormatter formatter)
         {
             Assert.AreEqual("Price: 22,4", formatter.LineOne);
         }
 
-        public void VerifyLineTwo(HeaderFormatter formatter)
+        private static void VerifyLineTwo(HeaderFormatter formatter)
         {
             Assert.AreEqual("Date: 02/10/2002 0:00:00", formatter.LineTwo);
         }
