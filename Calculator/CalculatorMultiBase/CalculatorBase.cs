@@ -15,7 +15,7 @@ namespace CalculatorMultiBase
 
         public string Addition(string operand1, string operand2)
         {
-            return ProcedeToOperation(operand1, operand2, Operation.Addtion);
+            return ProcedeToOperation(operand1, operand2, Operation.Addition);
         }
 
         public string Substraction(string operand1, string operand2)
@@ -68,8 +68,8 @@ namespace CalculatorMultiBase
         {
             switch (operation)
             {
-                case Operation.Addtion:
-                    return DoAddition();
+                case Operation.Addition:
+                   return DoAddition();
                 case Operation.Substraction:
                     return DoSubstraction();
                 case Operation.Multiplication:
@@ -81,10 +81,10 @@ namespace CalculatorMultiBase
             }
         }
 
-        private void SetOperands(string operand1, string operan2)
+        private void SetOperands(string operand1, string operand2)
         {
             this._operand1 = BaseChange.ArbitraryToDecimalSystem(operand1, this._radix);
-            this._operand2 = BaseChange.ArbitraryToDecimalSystem(operan2, this._radix);
+            this._operand2 = BaseChange.ArbitraryToDecimalSystem(operand2, this._radix);
         }
 
         private string ConvertBack(long result)
@@ -94,7 +94,7 @@ namespace CalculatorMultiBase
 
         private enum Operation
         {
-            Addtion,
+            Addition,
             Substraction,
             Multiplication,
             Division
