@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator.Test", "Calculat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorMultiBase", "CalculatorMultiBase\CalculatorMultiBase.csproj", "{44F01515-2D34-46A1-A6B3-B47277852751}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator.Implementation", "Calculator.Implementation\Calculator.Implementation.csproj", "{4B5EDA60-AE34-4231-B23A-92EDE368451F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{44F01515-2D34-46A1-A6B3-B47277852751}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44F01515-2D34-46A1-A6B3-B47277852751}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44F01515-2D34-46A1-A6B3-B47277852751}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B5EDA60-AE34-4231-B23A-92EDE368451F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B5EDA60-AE34-4231-B23A-92EDE368451F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B5EDA60-AE34-4231-B23A-92EDE368451F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B5EDA60-AE34-4231-B23A-92EDE368451F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

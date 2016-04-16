@@ -1,8 +1,8 @@
-﻿using CalculatorMultiBase;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-
-namespace Calculator
+﻿namespace Calculator.MultiBase.Test
 {
+    using CalculatorMultiBase;
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
+
     [TestClass]
     public class CalculatorBase8Test : CalculatorBaseBaseTest
     {

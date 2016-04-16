@@ -1,7 +1,7 @@
-﻿using System;
-
-namespace CalculatorMultiBase
+﻿namespace CalculatorMultiBase
 {
+    using System;
+
     /// http://www.pvladov.com/2012/05/decimal-to-arbitrary-numeral-system.html
     /// http://www.pvladov.com/2012/07/arbitrary-to-decimal-numeral-system.html
     public static class BaseChange

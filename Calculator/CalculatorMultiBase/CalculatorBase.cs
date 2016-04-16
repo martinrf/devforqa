@@ -1,7 +1,7 @@
-﻿using System;
-
-namespace CalculatorMultiBase
+﻿namespace CalculatorMultiBase
 {
+    using System;
+
     public abstract class CalculatorBase : ICalculator
     {
         private long _operand2;
