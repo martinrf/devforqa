@@ -1,4 +1,4 @@
-﻿namespace Calculator.Implementation
+﻿namespace Calculator.Implementation.Intefaces
 {
     using System.Collections.Generic;
 

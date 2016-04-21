@@ -53,6 +53,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Calculator.Test\EnumerableCalculationTest.cs" />
+    <Compile Include="IfTest.cs" />
     <Compile Include="MultiBase.Test\CalculatorBase12Test.cs" />
     <Compile Include="MultiBase.Test\CalculatorBase16Test.cs" />
     <Compile Include="MultiBase.Test\CalculatorBase8Test.cs" />

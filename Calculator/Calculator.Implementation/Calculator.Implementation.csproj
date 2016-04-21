@@ -41,7 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ForImplementation.cs" />
-    <Compile Include="IEnumerableCalculation.cs" />
+    <Compile Include="Intefaces\IEnumerableCalculation.cs" />
     <Compile Include="BaseImplementation.cs" />
     <Compile Include="DoWhileImplementation.cs" />
     <Compile Include="ForEachImplementation.cs" />
