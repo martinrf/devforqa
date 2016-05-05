@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Linq;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
 
     [TestClass]
@@ -19,6 +20,20 @@
         [TestMethod]
         public void SelectingItems()
         {
+            var a = new List<string>();
+
+            var b = from p in this._properties select p;
+            IEnumerable<Property> asa = from p in this._properties select p;
+
+            var c = from p in this._properties select p.Name;
+            IEnumerable<string> dadç = from p in this._properties select p.Name;
+
+
+            var d = from p in this._properties select new { p.Rating, p.Name };
+            IEnumerable<object> ds = from p in this._properties select new { p.Rating, p.Name };
+
+            var f = from p in this._properties select new Property { Rating = p.Rating, Name = p.Name };
+            IEnumerable<Property> fs = from p in this._properties select new Property { Rating = p.Rating, Name = p.Name };
         }
 
         private void InitializeEntities()
