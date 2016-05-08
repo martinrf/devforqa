@@ -2,7 +2,12 @@
 {
     using System;
 
-    public struct Property
+    public interface IHasCurrency
+    {
+        Currency Currency { get; set; }
+    }
+
+    public struct Property : IHasCurrency
     {
         public string Name { get; set; }
         public int Rating { get; set; }
@@ -11,7 +16,7 @@
         public DateTime DateInMarket { get; set; }
     }
 
-    public struct Customer
+    public struct Customer : IHasCurrency
     {
         public string Name { get; set; }
         public Currency Currency  { get; set; }
