@@ -39,13 +39,58 @@
             
         }
 
+        [TestMethod]
+        public void PropertiesAndCustomersByCurrencyTest()
+        {
+            foreach (var group in PropertiesAndCustomersByCurrency())
+            {
+                foreach (var hasCurrency in group)
+                {
+                    Assert.AreEqual(hasCurrency.Currency, group.Key);
+                }
+            }
+        }
+
+        [TestMethod]
+        public void AveragePropertyPriceByCurrency()
+        {
+            var result = AveragePriceByCurrency();
+            Assert.AreEqual(175483m, result[Currency.Dollar]);
+            Assert.AreEqual(75499.5m, result[Currency.Euro]);
+        }
+
+        public IDictionary<Currency, decimal> AveragePriceByCurrency()
+        {
+            var query = from p in this._properties
+                group p by new
+                {
+                    p.Currency
+                }
+                into g
+                select new
+                {
+                    Average = g.Average(p => p.SalePrice),
+                    g.Key.Currency
+                };
+                     
+            return query.ToDictionary(x => x.Currency, x => x.Average);
+        }
+
+        public IEnumerable<IGrouping<Currency, IHasCurrency>> PropertiesAndCustomersByCurrency()
+        {
+            var mergeList = this._properties.Cast<IHasCurrency>().Concat(this._customers.Cast<IHasCurrency>());
+            var query = from item in mergeList
+                        group item by item.Currency;
+            return query;
+        }
+
         private void InitializeEntities()
         {
             this._properties = new List<Property>
             {
                 new Property
                 {
-                    Name = "Property 1",
+                    Name = "Property Dollar 1",
                     DateInMarket = new DateTime(2016, 1, 12),
                     Rating = 2,
                     SalePrice = 325465m,
@@ -53,7 +98,7 @@
                 },
                 new Property
                 {
-                    Name = "Property 2",
+                    Name = "Property Dollar 2",
                     DateInMarket = new DateTime(2016, 3, 6),
                     Rating = 4,
                     SalePrice = 225468m,
@@ -61,7 +106,7 @@
                 },
                 new Property
                 {
-                    Name = "Property 3",
+                    Name = "Property Dollar 3",
                     DateInMarket = new DateTime(2016, 2, 9),
                     Rating = 3,
                     SalePrice = 117755m,
@@ -69,7 +114,7 @@
                 },
                 new Property
                 {
-                    Name = "Property 4",
+                    Name = "Property Dollar 4",
                     DateInMarket = new DateTime(2016, 2, 11),
                     Rating = 3,
                     SalePrice = 33244m,
@@ -77,7 +122,7 @@
                 },
                 new Property
                 {
-                    Name = "Property 3",
+                    Name = "Property Euro 3",
                     DateInMarket = new DateTime(2016, 2, 9),
                     Rating = 3,
                     SalePrice = 117755m,
@@ -85,7 +130,7 @@
                 },
                 new Property
                 {
-                    Name = "Property 4",
+                    Name = "Property Euro 4",
                     DateInMarket = new DateTime(2016, 2, 11),
                     Rating = 3,
                     SalePrice = 33244m,
@@ -96,13 +141,13 @@
             {
                 new Customer
                 {
-                    Name = "Customer 1",
+                    Name = "Customer Euro 1",
                     Currency = Currency.Euro,
                     Rating = 59
                 },
                 new Customer
                 {
-                    Name = "Customer 2",
+                    Name = "Customer Euro 2",
                     Currency = Currency.Euro,
                     Rating = 112
                 },
