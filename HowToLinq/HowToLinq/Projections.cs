@@ -34,6 +34,9 @@
 
             var f = from p in this._properties select new Property { Rating = p.Rating, Name = p.Name };
             IEnumerable<Property> fs = from p in this._properties select new Property { Rating = p.Rating, Name = p.Name };
+
+            var f1 = from p in this._properties select new ItemList { MagicNumber = p.Rating, Name = p.Name };
+            
         }
 
         private void InitializeEntities()
@@ -111,5 +114,11 @@
                 }
             };
         }
+    }
+
+    public class ItemList
+    {
+        public string Name { get; set; }
+        public int MagicNumber { get; set; }
     }
 }
