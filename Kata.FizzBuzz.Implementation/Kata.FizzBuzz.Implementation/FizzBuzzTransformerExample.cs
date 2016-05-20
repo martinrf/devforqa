@@ -40,7 +40,9 @@
         private static bool IsSequential(IEnumerable<int> array)
         {
             var enumerable = array as int[] ?? array.ToArray();
-            return enumerable.Zip(enumerable.Skip(1), (a, b) => (a + 1) == b).All(x => x);
+            return enumerable
+                .Zip(enumerable.Skip(1), (a, b) => (a + 1) == b)
+                .All(x => x);
         }
     }
 }

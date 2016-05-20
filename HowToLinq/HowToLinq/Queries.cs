@@ -3,6 +3,7 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
+    using System.Security.Cryptography.X509Certificates;
     using System.Text;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -86,8 +87,33 @@
         {
             var query = from property in this._properties
                         group property by property.Currency;
+
+            var query2 = this._properties.OrderBy(o => o.Currency);
+
+           
             return query;
         }
+
+
+        [TestMethod]
+        public void ItWillBreakStuff()
+        {
+           // this.HowQuestionMarkWorks(null);
+            this.HowQuestionMarkWorks(new List<int>());
+            this.HowQuestionMarkWorks(new[] {1, 2, 3});
+        }
+        
+        public void HowQuestionMarkWorks(IEnumerable<int> array)
+        {
+           var enumerable = array as int[] ?? this.DoSomething(array);
+
+        }
+
+        public int[] DoSomething(IEnumerable<int> array)
+        {
+            return array.ToArray();
+        }
+
 
         [TestMethod]
         public void GroupingTest()
